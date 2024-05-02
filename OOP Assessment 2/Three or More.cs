@@ -141,11 +141,21 @@ namespace OOP_Assessment_2
             Console.Clear();
             Console.WriteLine("**** Three or More - Multiplayer ****\n");
 
-            // Giving the users the chance to input their names
-            Console.Write("Enter Player 1's name: ");
-            string player1Name = Console.ReadLine();
-            Console.Write("Enter Player 2's name: ");
-            string player2Name = Console.ReadLine();
+            //Giving the users the option to enter their names, it will make the game feel more personalised
+            string player1Name = "";
+            string player2Name = "";
+            Console.WriteLine("Please enter your names! (Must be greater than one character)");
+            while (player1Name.Length < 1)
+            {
+                Console.Write("\nPlayer 1: ");
+                player1Name = Console.ReadLine();
+            }
+
+            while (player2Name.Length < 1)
+            {
+                Console.Write("Player 2: ");
+                player2Name = Console.ReadLine();
+            }
 
             // Declaring variables to store player scores
             int player1Score = 0;
