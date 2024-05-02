@@ -30,6 +30,8 @@ namespace OOP_Assessment_2
             bool inputValidation = false;
             Console.Clear();
             Console.WriteLine("Welcome to Sevens Out!");
+            Console.WriteLine("\nRules: At the press of a key, the player will roll two dice. The sum of the dice rolls are \nadded to a total, first to 77 wins!\n" +
+                "If you roll a double, your score is doubled. If you roll a 7, you miss a turn!");
             string sevensOutText = "\nHow would you like to play?\n\n1.) Singleplayer\n2.) Multiplayer\n3.) Statistics\n4.) Return to the main menu\n5.) Exit\n";
             Console.WriteLine(sevensOutText);
 
